@@ -1,0 +1,28 @@
+{
+  "name": "bytechat-backend",
+  "version": "1.0.0",
+  "description": "Real-time chat API (Express, Socket.io, MongoDB, Clerk, ImageKit)",
+  "main": "src/index.js",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build" : "rm -rf dist && -R src dist",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@clerk/express": "^2.1.72",
+    "@imagekit/nodejs": "^7.7.0",
+    "cors": "^2.8.6",
+    "cron": "^4.4.0",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.2",
+    "multer": "^2.1.1",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

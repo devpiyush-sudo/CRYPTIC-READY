@@ -1,0 +1,27 @@
+# Render Blueprint: one Docker web service for the whole app.
+# Dashboard -> New -> Blueprint -> pick this repo. Secrets marked sync:false are asked for once.
+services:
+  - type: web
+    name: bytechat
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: CLERK_PUBLISHABLE_KEY
+        sync: false
+      - key: CLERK_SECRET_KEY
+        sync: false
+      - key: CLERK_WEBHOOK_SIGNING_SECRET
+        sync: false
+      - key: IMAGEKIT_PRIVATE_KEY
+        sync: false
+      - key: FRONTEND_URL
+        sync: false # your public URL, e.g. https://bytechat.onrender.com
+      # Docker builds read the publishable key as a build arg (same value as CLERK_PUBLISHABLE_KEY)
+      - key: VITE_CLERK_PUBLISHABLE_KEY
+        sync: false
