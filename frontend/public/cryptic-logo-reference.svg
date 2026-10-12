@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100" role="img" aria-labelledby="title description">
+  <title id="title">Cryptic chat application logo</title>
+  <desc id="description">A magenta and violet C-shaped chat bubble with three dots, the word Cryptic, and the tagline The Chatting App.</desc>
+  <defs>
+    <linearGradient id="magenta" x1="275" y1="173" x2="679" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F50083"/>
+      <stop offset=".48" stop-color="#D10AA1"/>
+      <stop offset="1" stop-color="#7426C8"/>
+    </linearGradient>
+    <linearGradient id="dot" x1="390" y1="387" x2="600" y2="425" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D10AA1"/>
+      <stop offset="1" stop-color="#8B1AC9"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(190 0)">
+    <path d="M672 226c-60-70-150-107-247-107-154 0-279 121-279 270 0 53 16 103 43 145l-37 132c-5 18 14 32 31 24l117-54c39 16 82 25 125 25 103 0 194-52 247-132l-116-43c-32 39-79 64-131 64-96 0-173-74-173-161 0-88 77-161 173-161 56 0 108 26 140 70l104-53c17-9 16-28 3-19Z" fill="url(#magenta)"/>
+    <circle cx="382" cy="389" r="14" fill="url(#dot)"/>
+    <circle cx="438" cy="389" r="14" fill="url(#dot)"/>
+    <circle cx="494" cy="389" r="14" fill="url(#dot)"/>
+  </g>
+  <text x="600" y="822" fill="#17151D" font-family="Montserrat, Avenir Next, Arial, sans-serif" font-size="104" font-weight="700" letter-spacing="18" text-anchor="middle">CRYPTIC</text>
+  <text x="600" y="894" fill="#4B4650" font-family="Montserrat, Avenir Next, Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="12" text-anchor="middle">THE CHATTING APP</text>
+</svg>
